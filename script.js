@@ -12,7 +12,11 @@ slider.addEventListener('input', function(){
 btn.addEventListener('click', function(){
     inputValue = input.value;
     grid(inputValue);
-})
+});
+
+container.addEventListener('mouseover', (e) => {
+    e.target.style.backgroundColor = 'purple';
+});
 
 function grid(inputValue) {
     if (container.hasChildNodes()) {
